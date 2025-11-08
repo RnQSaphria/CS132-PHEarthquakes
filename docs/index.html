@@ -235,23 +235,34 @@
 							<li>H1: Earthquakes in 2024–2025 have the same magnitude across all regions.</li>
 							<li>H0: Earthquakes in 2024–2025 have significant differences in their magnitude among regions.</li>
 						</p>
-						<p></p>
+						<p>To test the hypothesis, we can see that the predictor variable is the Region (Categorical).</p>
+						<p>The outcome variable here would be depth and magnitude which are both (Quantitative)</p>
+						<p>Since there are two, we use the ANOVA Test</p>
 					</header>
-					<div class="row">
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Results</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Results</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
+					<div>
+						<article class="box">
+							<h3>From our data we first checked if our data is normal using skew, kurtosis, and Shapiro-Wilk</h3>
+							<p>From the results we got that:</p>
+							<p>
+								<h4>Magnitude:</h4>
+								<li>Statistic: 0.9334</li>
+								<li>P-value: 2.5732e-81</li>
+								<li>Skewness: 1.1028 (right-skewed)</li>
+								<li>Kurtosis: 1.7245 (heavy-tailed)</li>
+								<li>Result: NOT normally distributed</li>
+								
+								<h4>Depth:</h4>
+								<li>Statistic: 0.5996</li>
+								<li>P-value: 1.0151e-127</li>
+								<li>Skewness: 5.2020 (right-skewed)</li>
+								<li>Kurtosis: 54.7106 (heavy-tailed)</li>
+								<li>Result: NOT normally distributed</li>
+								<p>Since data is not normally distributed, use log.</p>
+								
+							</p>
+							<p>From log we get the following results:</p>
+						</article>
+						
 					</div>
 					<footer>
 						<p>Want to learn more? Take a look at our source codes.</p>
