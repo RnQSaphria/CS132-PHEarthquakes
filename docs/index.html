@@ -261,8 +261,37 @@
 								
 							</p>
 							<p>From log we get the following results:</p>
+							<p>
+								<h4>Log-transformed Magnitude:</h4>
+								<li>Shapiro-Wilk p-value: 2.1656e-42</li>
+								<li>Skewness: 0.2888 (original: 1.1028)</li>
+								<li>Kurtosis: -0.1628 (original: 1.7245)</li>
+								<li>Result: Normalized now</li>
+
+								<h4>Log-transformed Depth:</h4>
+								<li>Shapiro-Wilk p-value: 7.9129e-75</li>
+								<li>Skewness: -0.5784 (original: 5.2020)</li>
+								<li>Kurtosis: 0.2794 (original: 54.7106)</li>
+								<li>Result: Normalized now</li>
+							</p>
 						</article>
-						
+						<article class="box">
+							<a class="image"><img src="Hypotheses_Normality_Histogram.png"></a>
+						</article>
+
+						<article class="box">
+							<h3>Since it is normalized, we can use One-way ANOVA for magnitude</h3>
+							<p>From the results we got that:</p>
+							<p>
+								<h4>One-way ANOVA:</h4>
+								<li>Test Statistic: 451.0068</li>
+								<li>P-value: 0.0000e+00</li>
+								<li>Significance level: α = 0.05</li>
+								<li>Result: Significant difference EXISTS among regions</li>
+							</p>
+							<h3>Since these are the results, we can determine that Magnitude between regions are different.</h3>
+							<h3>We reject H1 because of this.</h3>
+						</article>
 					</div>
 					<footer>
 						<p>Want to learn more? Take a look at our source codes.</p>
